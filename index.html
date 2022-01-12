@@ -18,8 +18,69 @@
     <title>Survey Form</title>
 </head>
 <body>
+
     <div class="main-container">
+        <div class="survey-content">
+            <h1 id="title">Shiwa's Survey :D</h1>
+            <p id="description">Thanks for taking my survey</p>
+            <div class="form-div">
+                <form id="survey-form">
+                    <label for="name" id="name-label">
+                        <h3 class="titles-survey">Name</h3>
+                        <input type="text" name="name" id="name" required placeholder="Enter your name">
+                    </label>
+                    <label for="email" id="email-label">
+                        <h3 class="titles-survey">Email</h3>
+                        <input type="email" name="email" id="email" required placeholder="example@example.com">
+                    </label>
+        
+                    <label for="number" id="number-label">
+                        <h3 class="titles-survey">Age</h3>
+                        <input type="number" name="number" id="number" required min="1" max="120" placeholder="Enter your age">
+                    </label>
+        
+                    <label for="languages">
+                        <h3>What's your favourite programming language?</h3>
+                        <select name="languages" id="dropdown">
+                            <option disabled="" selected="" value="">Select one programming Language</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="Java">Java</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="other">Other..</option>
+                            
+                        </select>
+                    </label>
+                    <label for="hours-coding-checkbox">
+                        <h3>How many hours do you spend coding a day?</h3>
+                        <input type="radio" name="hour" id="first-hours-coding-checkbox" value="one-two"> 1-2 hours daily.<br>
+                        
+
+                        <input type="radio" name="hour" id="second-hours-coding-checkbox" value="three-five"> 3-5 hours daily. <br>
+                        <input type="radio" name="hour" id="second-hours-coding-checkbox" value="six-twelve"> 6-12 hours daily. <br>
+                    </label>
+                    <label for="games">
+                        <h3>What games do you play?</h3>
+                        <input type="checkbox" name="game" id="game-1" value="valorant"> Valorant <br>
+                        <input type="checkbox" name="game" id="game-2" value="minecraft"> Minecaft <br>
+                        <input type="checkbox" name="game" id="game-3" value="osu"> osu! <br>
+                        <input type="checkbox" name="game" id="game-4" value="csgo"> Counter Strike: Global Offensive <br>
+                    </label>
+                    
+                    <h3>Any comments or suggestions?</h3>
+                    <textarea name="comments" id="commentary" cols="88" rows="6" placeholder="Enter your comments here..."></textarea>
+                    
+                    <button type="submit" id="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    
         
     </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
